@@ -1,6 +1,6 @@
 {% set provider = "kubectl" %}
 {% set goname = "github.com/alekc/terraform-provider-"+provider.lower() %}
-{% set version = "2.4.1" %}
+{% set version = "3.0.0" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: 8c454a214ac4bc9f1d722cf109a1fdd90105b07c39f4fcedccebf0cf21aaf057
+  sha256: 81049f46ba6198e8af0b64c9494ee9891cbaeb198a58007dfe0eb1cd6e24a4f3
 
 
 build:
